@@ -2,6 +2,9 @@
 
 With ExplosiveProjectiles, we want users to have silly fun while providing excellent reassurance for server-safety.
 
+Permissions DO NOT override Feature-Toggles each other. 
+> - Ex: Permission and Feature to break blocks must both be enabled to break blocks.
+
 Please read carefully.
 
 
