@@ -1,24 +1,26 @@
 # ExplosiveProjectiles
 Minecraft Plugin that allows projectiles to explode on impact while providing a feature-rich configuration.
 
-# Features
+## Features
 
-> - Arrows/Eggs/Snowballs explode on impact!
+> - Permissions to safely limit ranks/players!
+> - Arrows/Eggs/EnderPearls/ExpBottles/FishingBobber/Potions/Snowballs/Tridents explode on impact!
 > - Togglable Player/Mob Damage!
 > - Togglable Block Breaking!
+> - Togglable Mob Impact
 > - Configure explosive power and fire aspect.
+> - Configure individual projectile explosives.
 
-# Coming Soon
+## Coming Soon
 
-> - Permissions
 > - Commands
 > - Backporting
 
-# Supported Versions
+## Supported Versions
 
 > - 1.21.x
 
-# Links
+## Links
 
 **Projects**
 
