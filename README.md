@@ -14,7 +14,7 @@ Minecraft Plugin that allows projectiles to explode on impact while providing a 
 ## Coming Soon
 
 > - Commands
-> - Backporting
+> - Backporting (1.18.2 - Current)
 
 ## Supported Versions
 
