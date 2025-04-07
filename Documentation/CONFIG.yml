@@ -88,5 +88,10 @@ FishingBobber-Impact: 1
 #-----------------------------------------------#
 #             Miscellaneous Toggles             #
 #-----------------------------------------------#
+
+trident-Teleport: false
+#Fixes issue of tridents getting stuck in mid-air.
+trident-TP-Message: true
+#Lets the shooter know their trident was teleported back to them. Only works if trident-Teleport is enabled.
 verbose: false
 #For debugging. Not recommended for public servers.
