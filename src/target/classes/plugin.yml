@@ -1,0 +1,27 @@
+name: ExplosiveProjectiles-1.21.4
+version: '1.0.3'
+main: me.sintaxlabs.explosiveProjectiles.EPmain
+api-version: '1.21'
+
+permissions:
+  explosiveProjectiles.all:
+    description: Gives access to all enabled features.
+    default: false
+    children:
+      explosiveProjectiles.projectiles: true
+      explosiveProjectiles.breakBlocks: true
+      explosiveProjectiles.harmPlayers: true
+      explosiveProjectiles.harmMobs: true
+
+  explosiveProjectiles.projectiles:
+    description: Gives access to projectiles causing the explosive effect but won't harm.
+    default: false
+  explosiveProjectiles.breakBlocks:
+    description: Gives access to breaking blocks if that's enabled.
+    default: false
+  explosiveProjectiles.harmPlayers:
+    description: Gives access to harming players if that's enabled.
+    default: false
+  explosiveProjectiles.harmMobs:
+    description: Gives access to harming players if that's enabled.
+    default: false
