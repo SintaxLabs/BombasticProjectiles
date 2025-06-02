@@ -11,15 +11,14 @@ Minecraft Plugin that allows projectiles to explode on impact while providing a 
 > - Configure explosive power and fire aspect.
 > - Configure individual projectile explosives.
 
-## Coming Soon
-
-> - Commands
-> - Backporting (1.18.2 - Current)
-
 ## Supported Versions
 
 > - 1.21.x
+> - 1.21.4
+> - 1.20.6
+> - 1.19.4
 > - 1.18.2
+> - Soon: 1.12, 1.13, & 1.16 support.
 
 ## Links
 
