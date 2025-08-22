@@ -3,7 +3,7 @@
 With ExplosiveProjectiles, we want users to have silly fun while providing excellent reassurance for server-safety.
 
 Permissions DO NOT override Feature-Toggles.
-> - Ex: Permission and Feature to break blocks must both be enabled to break blocks.
+> - Ex: Permission and Feature to break blocks must both be enabled to destroy blocks via explosive projectile.
 
 Please read carefully.
 
@@ -25,3 +25,6 @@ explosiveProjectiles.harmPlayers
 
 explosiveProjectiles.harmMobs
 > - Gives access to harming mobs if that's enabled.
+
+explosvieProjectiles.reload
+> - Allows user to reload the configuration.
