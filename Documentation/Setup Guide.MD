@@ -16,6 +16,23 @@ You also only want VIP Players to access this.
 
 4. toggle-BreakBlocks: **false**
 
-5. Enable the following permissions:
+5. Add the following permissions to your VIP rank:
 - bombasticProjectiles.projectiles
 - bombasticProjectiles.harmPlayers
+
+
+
+## Scenario 2
+In this example, you want Bows to have a gigantic impact but Eggs have a tiny impact.
+
+You also want no player damage but mobs can be killed.
+
+1. In your config, enable Eggs.
+
+2. impact-Custom: **true**
+
+2. toggle-HurtMobs: **true**
+
+3. Egg-Impact: 1
+
+4. Arrow-Impact: 25
