@@ -1,8 +1,5 @@
 # Commands
-
 List of commands and their details
-
-# List
 
 /bombasticprojectiles reload
 > - Reloads the configuration file.
