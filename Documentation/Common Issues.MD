@@ -2,7 +2,7 @@
 
 
 ## I have tried everything but explosions are not working.
-You missed a permission. ### bombasticProjectile.projectile
+You missed a permission. *bombasticProjectile.projectiles*
 
 This permission exists so players dont get the explosive effect despite not being allowed to do anything.
 
