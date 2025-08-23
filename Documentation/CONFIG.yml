@@ -1,6 +1,6 @@
 
 #-----------------------------------------------#
-#             Explosive Projectiles             #
+#             Bombastic Projectiles             #
 #                                               #
 #                  Sintax Labs                  #
 #-----------------------------------------------#
@@ -10,14 +10,15 @@
 #-----------------------------------------------#
 
 require-Permission: false
-#NOTE: If true, Permissions do not override Feature Toggles.
+#If true, Permissions and Features must be both granted/enabled.
 
 impact-Custom: false
 #Allows custom explosive impact for each projectile.
 #If enabled, impact-all will be ignored. Vice Versa.
 
 impact-All: 5
-#0 = No Damage
+#Requires impact-Custom to be false.
+#0 = No Impact
 #127 = Max Impact
 
 
@@ -30,7 +31,6 @@ toggle-Fire: false
 #Similar to Ghast fireball explosions.
 
 toggle-BreakBlocks: true
-#Does not bypass permissions.
 #NOTE: To prevent block-damage in WorldGuard Regions, set other-explosions to false in your Region Flags.
 #/rg info regionName then Flags.
 
@@ -93,5 +93,7 @@ trident-Teleport: false
 #Fixes issue of tridents getting stuck in mid-air.
 trident-TP-Message: true
 #Lets the shooter know their trident was teleported back to them. Only works if trident-Teleport is enabled.
+
 verbose: false
-#For debugging. Not recommended for public servers.
+#Not recommended for public servers.
+#Used for debugging.
