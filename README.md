@@ -1,5 +1,5 @@
 # BombasticProjectiles
-Feature-rich Plugin for explosive projectiles.
+Explosive projectiles with rich configuration.
 
 ## Features
 
