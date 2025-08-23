@@ -5,7 +5,8 @@ Common issues and FAQ
 
 ## What is "mob-Explode-Blocks" & "mob-Explode-Entities?"
 This enables explosions from mobs such as Skeletons if it hits a player/mob or any block.
-This prevents unnecessary explosions in whatever you choose.
+
+This prevents unnecessary explosions and does not mean it will break blocks.
 
 # Common issues and how to resolve them.
 
