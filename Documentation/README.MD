@@ -18,8 +18,10 @@ This permission is mandatory for any feature to work.
 
 ## Mobs are destroying everything
 Disable **mobs-Explode-Entities** & **mobs-Explode-Blocks**.
+
 This prevents them from triggering explosions if they hit a block or player/mob.
-This is disabled by DEFAULT.
+
+**This is disabled by DEFAULT.**
 
 ## XYZ Projectile is not exploding.
 Make sure the projectile is set to true. Only Arrows are enabled by default.
