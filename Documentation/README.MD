@@ -8,6 +8,11 @@ This enables explosions from mobs such as Skeletons if it hits a player/mob or a
 
 This prevents unnecessary explosions and does not mean it will break blocks.
 
+## Can players hit themselves?
+No, this is prevented by default regardless of any condition.
+
+This does not effect players that dont have the permission: bombasticProjectiles.projectiles
+
 # Common issues and how to resolve them.
 
 ## I have tried everything but explosions are not working.
