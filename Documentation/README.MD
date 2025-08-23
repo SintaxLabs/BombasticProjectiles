@@ -1,5 +1,13 @@
-## Common issues and how to resolve them.
+# Introduction
+Common issues and FAQ
 
+# FAQ
+
+## What is "mob-Explode-Blocks" & "mob-Explode-Entities?"
+This enables explosions from mobs such as Skeletons if it hits a player/mob or any block.
+This prevents unnecessary explosions in whatever you choose.
+
+# Common issues and how to resolve them.
 
 ## I have tried everything but explosions are not working.
 You missed a permission. *bombasticProjectile.projectiles*
@@ -7,6 +15,11 @@ You missed a permission. *bombasticProjectile.projectiles*
 This permission exists so players dont get the explosive effect despite not being allowed to do anything.
 
 This permission is mandatory for any feature to work.
+
+## Mobs are destroying everything
+Disable **mobs-Explode-Entities** & **mobs-Explode-Blocks**.
+This prevents them from triggering explosions if they hit a block or player/mob.
+This is disabled by DEFAULT.
 
 ## XYZ Projectile is not exploding.
 Make sure the projectile is set to true. Only Arrows are enabled by default.
