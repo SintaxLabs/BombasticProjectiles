@@ -6,7 +6,7 @@ There are a handful of permissions and configurations that must work together to
 ## Things to know.
 1. Permissions DO NOT override features. If you enable permissions, make sure the permission is added and the feature is toggled.
 
-2. Mobs can be toggled to break blocks. **Enable mobs-Explode-Entities** or **mobs-Explode-Blocks.**
+2. Mobs can be toggled to cause explosions. **Enable mobs-Explode-Entities** or **mobs-Explode-Blocks.**
 
 This allows the explosion to occur if they hit a block or player/mob. **toggle-BreakBlocks** must be set to TRUE.
 
