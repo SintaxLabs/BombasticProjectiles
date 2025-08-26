@@ -18,8 +18,9 @@ Every aspect can toggled and configured!
 Is this safe for Worldguard?
 > - No but you can set "other-explosions" to FALSE in your Region Flags to block it.
 
-Is this performant for server?
+Is this performant for servers?
 > - About as performant as explosions can be.
+> - All elements and checks are optimized to run quick and smooth.
 > - Coming soon:
 > -   Explosions have a default cap of 10. The cap can be disabled.
 > -   Blocks from explosions do not drop items by default.
