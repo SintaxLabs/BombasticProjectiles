@@ -2,14 +2,26 @@
 Explosive projectiles with rich configuration.
 
 ## Features
-
 > - Permissions to safely limit ranks/players!
-> - Arrows/Eggs/EnderPearls/ExpBottles/FishingBobber/Potions/Snowballs/Tridents explode on impact!
 > - Togglable Player/Mob Damage!
 > - Togglable Block Breaking!
-> - Togglable Mob Impact
-> - Configure explosive power and fire aspect.
-> - Configure individual projectile explosives.
+> - Choose what projectile can explode.
+> - Rich configuration for everything between you and the explosion.
+
+## Configurable
+Every aspect can toggled and configured!
+> - Global Explosive Power
+> - Togglable Mob Explosive Power
+> - Togglable Explosive Power for each projectile.
+
+## FAQ
+Is this safe for Worldguard?
+> - No but you can set "other-explosions" to FALSE in your Region Flags to block it.
+Is this performant for server?
+> - About as performant as explosions can be.
+> - Coming soon:
+> -   Explosions have a default cap of 10. The cap can be disabled.
+> -   Blocks from explosions do not drop items by default.
 
 ## Supported Versions
 
