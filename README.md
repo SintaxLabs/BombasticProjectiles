@@ -21,9 +21,7 @@ Is this safe for Worldguard?
 Is this performant for servers?
 > - About as performant as explosions can be.
 > - All elements and checks are optimized to run quick and smooth.
-> - Coming soon:
-> -   Explosions have a default cap of 10. The cap can be disabled.
-> -   Blocks from explosions do not drop items by default.
+> - Coming soon: Blocks from explosions do not drop items by default.
 
 ## Supported Versions
 
