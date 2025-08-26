@@ -17,6 +17,7 @@ Every aspect can toggled and configured!
 ## FAQ
 Is this safe for Worldguard?
 > - No but you can set "other-explosions" to FALSE in your Region Flags to block it.
+
 Is this performant for server?
 > - About as performant as explosions can be.
 > - Coming soon:
