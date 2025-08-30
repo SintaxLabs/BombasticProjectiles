@@ -37,9 +37,8 @@ ProtectedWorlds:
 #These entities are immune regardless of any perm/toggle.
 ProtectedEntities:
   - NULL
-  - CAT
+  - PARROT
   - ITEM_FRAME
-  - GLOW_ITEM_FRAME
   - PAINTING
 
 
@@ -119,3 +118,4 @@ trident-TP-Message: true
 
 #Not recommended for public servers, used for debugging.
 verbose: false
+
