@@ -127,10 +127,12 @@ public final class playerProjectileHitEvent implements Listener
 
     private void projectileListCheck()
     {
+        //Denies explosion if world is protected.
         String pWorld = pEventInfo.pLocation.getWorld().getName();
         if (main.Global.protectedWorldList.contains(pWorld))
         {
-            pEventInfo.playerWhoShot.sendMessage("§eExplosive projectiles are disabled in this world.");
+            if (main.Global.configToggleVerbose)
+            {pEventInfo.playerWhoShot.sendMessage("§eExplosive projectiles are disabled in this world.");}
             cleanUpProcess();
             return;
         }
@@ -267,4 +269,6 @@ public final class playerProjectileHitEvent implements Listener
         entityHurtCheck.hurtGlobal.playerCount = 1;
         launchCheck.launchGlobal.playerShotStarted = false;
     }
+
 }
+

@@ -79,6 +79,7 @@ public final class mobProjectileHitEvent implements Listener
     }
     private void projectileListCheck()
     {
+        //Denies explosion if world is protected.
         String mWorld = mobProjectileHitEvent.mEventInfo.mLocation.getWorld().getName();
         if (main.Global.protectedWorldList.contains(mWorld))
         {
@@ -173,4 +174,5 @@ public final class mobProjectileHitEvent implements Listener
         {mEventInfo.mEntity.remove();}
 
     }
+
 }

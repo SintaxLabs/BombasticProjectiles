@@ -131,7 +131,8 @@ public final class playerProjectileHitEvent implements Listener
         String pWorld = pEventInfo.pLocation.getWorld().getName();
         if (main.Global.protectedWorldList.contains(pWorld))
         {
-            pEventInfo.playerWhoShot.sendMessage("§eExplosive projectiles are disabled in this world.");
+            if (main.Global.configToggleVerbose)
+            {pEventInfo.playerWhoShot.sendMessage("§eExplosive projectiles are disabled in this world.");}
             cleanUpProcess();
             return;
         }
@@ -283,4 +284,5 @@ public final class playerProjectileHitEvent implements Listener
         if (launchCheck.launchGlobal.goodToDeleteTrident)
         {pEventInfo.pEntity.remove();}
     }
+
 }
