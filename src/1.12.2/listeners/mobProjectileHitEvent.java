@@ -1,6 +1,6 @@
-package me.sintaxlabs.bombasticProjectiles121x.listeners;
+package me.sintaxlabs.bombasticProjectiles112.listeners;
 
-import me.sintaxlabs.bombasticProjectiles121x.main;
+import me.sintaxlabs.bombasticProjectiles112.main;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.entity.*;
@@ -158,7 +158,6 @@ public final class mobProjectileHitEvent implements Listener
             //----------------------------------------------------------------------------
             main.Global.kaboom = true;
             mEventInfo.mTarget.createExplosion(mEventInfo.mLocation, mEventInfo.mImpactValue, main.Global.configToggleFire, main.Global.configToggleMobBreakBlocks);
-            //mEventInfo.mTarget.createExplosion(mEventInfo.mLocation, mEventInfo.mImpactValue, main.Global.configToggleFire, main.Global.configToggleMobBreakBlocks, mEventInfo.mobWhoShot);
             cleanUpProcess();
         }
     }

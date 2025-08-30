@@ -1,11 +1,10 @@
-package me.sintaxlabs.bombasticProjectiles121x.listeners;
+package me.sintaxlabs.bombasticProjectiles112.listeners;
 
-import me.sintaxlabs.bombasticProjectiles121x.main;
+import me.sintaxlabs.bombasticProjectiles112.main;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockExplodeEvent;
 import org.bukkit.event.entity.EntityExplodeEvent;
-import org.bukkit.event.hanging.HangingBreakByEntityEvent;
 import org.bukkit.event.hanging.HangingBreakEvent;
 
 public class explosiveBreakEvents implements Listener

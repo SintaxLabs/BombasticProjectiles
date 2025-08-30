@@ -1,6 +1,6 @@
-package me.sintaxlabs.bombasticProjectiles121x.listeners;
+package me.sintaxlabs.bombasticProjectiles112.listeners;
 
-import me.sintaxlabs.bombasticProjectiles121x.main;
+import me.sintaxlabs.bombasticProjectiles112.main;
 import org.bukkit.entity.*;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

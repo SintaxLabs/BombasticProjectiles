@@ -1,6 +1,6 @@
-package me.sintaxlabs.bombasticProjectiles121x.listeners;
+package me.sintaxlabs.bombasticProjectiles112.listeners;
 
-import me.sintaxlabs.bombasticProjectiles121x.main;
+import me.sintaxlabs.bombasticProjectiles112.main;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.entity.*;
@@ -266,9 +266,5 @@ public final class playerProjectileHitEvent implements Listener
         entityHurtCheck.hurtGlobal.mobCount = 1;
         entityHurtCheck.hurtGlobal.playerCount = 1;
         launchCheck.launchGlobal.playerShotStarted = false;
-
-        //1.0.7 Feature to delete Tridents if the shooter is in Creative Mode
-        if (launchCheck.launchGlobal.goodToDeleteTrident)
-        {pEventInfo.pEntity.remove();}
     }
 }

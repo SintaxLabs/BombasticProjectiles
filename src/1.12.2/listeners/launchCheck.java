@@ -1,6 +1,6 @@
-package me.sintaxlabs.bombasticProjectiles121x.listeners;
+package me.sintaxlabs.bombasticProjectiles112.listeners;
 
-import me.sintaxlabs.bombasticProjectiles121x.main;
+import me.sintaxlabs.bombasticProjectiles112.main;
 import org.bukkit.entity.*;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -31,7 +31,6 @@ public class launchCheck implements Listener
         public static boolean permHarmPlayers;
         public static boolean permHarmMobs;
         public static Player shooter;
-        public static boolean goodToDeleteTrident;
 
     }
     @EventHandler
@@ -39,7 +38,6 @@ public class launchCheck implements Listener
     {
         launchGlobal.mobShotStarted = false;
         launchGlobal.playerShotStarted = false;
-        launchGlobal.goodToDeleteTrident = false;
         var object = e.getEntity();
         var shooter = object.getShooter();
 

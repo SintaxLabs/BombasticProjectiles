@@ -5,7 +5,8 @@
 ////////////////////////////////////
 
 // https://github.com/SintaxLabs
-// Game: 1.21.x
+// Game: 1.12.2, ported from 1.21.x
+// Supports: 1.12.2 (No plans to ever test 1.13)
 // Version: 1.0.7
 
 
@@ -19,8 +20,8 @@
 //2b.   playerProjEvent
 
 
-package me.sintaxlabs.bombasticProjectiles121x;
-import me.sintaxlabs.bombasticProjectiles121x.listeners.*;
+package me.sintaxlabs.bombasticProjectiles112;
+import me.sintaxlabs.bombasticProjectiles112.listeners.*;
 
 import org.bukkit.Material;
 import org.bukkit.command.Command;
@@ -75,7 +76,6 @@ public final class main extends JavaPlugin implements Listener
         Global.configToggleEgg = this.getConfig().getBoolean("Egg");
         Global.configToggleArrow = this.getConfig().getBoolean("Arrow");
         Global.configTogglePotion = this.getConfig().getBoolean("Potion");
-        Global.configToggleTrident = this.getConfig().getBoolean("Trident");
         Global.configToggleSnowball = this.getConfig().getBoolean("Snowball");
         Global.configToggleExpBottle = this.getConfig().getBoolean("ExpBottle");
         Global.configToggleEnderpearl = this.getConfig().getBoolean("Enderpearl");
@@ -84,14 +84,11 @@ public final class main extends JavaPlugin implements Listener
         Global.configImpactEgg = this.getConfig().getInt("Egg-Impact");
         Global.configImpactArrow = this.getConfig().getInt("Arrow-Impact");
         Global.configImpactPotion = this.getConfig().getInt("Potion-Impact");
-        Global.configImpactTrident = this.getConfig().getInt("Trident-Impact");
         Global.configImpactSnowball = this.getConfig().getInt("Snowball-Impact");
         Global.configImpactExpBottle = this.getConfig().getInt("ExpBottle-Impact");
         Global.configImpactEnderpearl = this.getConfig().getInt("Enderpearl-Impact");
         Global.configImpactFishingBobber = this.getConfig().getInt("FishingBobber-Impact");
 
-        Global.configToggleTridentTeleport = this.getConfig().getBoolean("trident-Teleport");
-        Global.configToggleTridentTeleportMessage = this.getConfig().getBoolean("trident-TP-Message");
         Global.configToggleVerbose = this.getConfig().getBoolean("verbose");
 
     }
@@ -121,7 +118,6 @@ public final class main extends JavaPlugin implements Listener
         public static boolean configToggleEgg;
         public static boolean configToggleArrow;
         public static boolean configTogglePotion;
-        public static boolean configToggleTrident;
         public static boolean configToggleSnowball;
         public static boolean configToggleExpBottle;
         public static boolean configToggleEnderpearl;
@@ -130,15 +126,12 @@ public final class main extends JavaPlugin implements Listener
         public static int configImpactEgg;
         public static int configImpactArrow;
         public static int configImpactPotion;
-        public static int configImpactTrident;
         public static int configImpactSnowball;
         public static int configImpactExpBottle;
         public static int configImpactEnderpearl;
         public static int configImpactFishingBobber;
 
         public static boolean configToggleVerbose;
-        public static boolean configToggleTridentTeleport;
-        public static boolean configToggleTridentTeleportMessage;
 
         // Used as flag for when an explosion happens.
         // Various checks ONLY occur during the millisecond of the explosion being flagged.
@@ -214,7 +207,6 @@ public final class main extends JavaPlugin implements Listener
         Global.configToggleEgg = this.getConfig().getBoolean("Egg");
         Global.configToggleArrow = this.getConfig().getBoolean("Arrow");
         Global.configTogglePotion = this.getConfig().getBoolean("Potion");
-        Global.configToggleTrident = this.getConfig().getBoolean("Trident");
         Global.configToggleSnowball = this.getConfig().getBoolean("Snowball");
         Global.configToggleExpBottle = this.getConfig().getBoolean("ExpBottle");
         Global.configToggleEnderpearl = this.getConfig().getBoolean("Enderpearl");
@@ -223,14 +215,11 @@ public final class main extends JavaPlugin implements Listener
         Global.configImpactEgg = this.getConfig().getInt("Egg-Impact");
         Global.configImpactArrow = this.getConfig().getInt("Arrow-Impact");
         Global.configImpactPotion = this.getConfig().getInt("Potion-Impact");
-        Global.configImpactTrident = this.getConfig().getInt("Trident-Impact");
         Global.configImpactSnowball = this.getConfig().getInt("Snowball-Impact");
         Global.configImpactExpBottle = this.getConfig().getInt("ExpBottle-Impact");
         Global.configImpactEnderpearl = this.getConfig().getInt("Enderpearl-Impact");
         Global.configImpactFishingBobber = this.getConfig().getInt("FishingBobber-Impact");
 
-        Global.configToggleTridentTeleport = this.getConfig().getBoolean("trident-Teleport");
-        Global.configToggleTridentTeleportMessage = this.getConfig().getBoolean("trident-TP-Message");
         Global.configToggleVerbose = this.getConfig().getBoolean("verbose");
         loadProtectionLists();
     }
