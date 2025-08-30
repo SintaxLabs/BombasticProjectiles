@@ -32,6 +32,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.HashSet;
 import java.util.List;
@@ -166,7 +167,7 @@ public final class main extends JavaPlugin implements Listener
     }
 
     @Override
-    public boolean onCommand(CommandSender sender, Command command, String label, String[] args)
+    public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, String[] args)
     {
         if (args.length == 0)
         {
