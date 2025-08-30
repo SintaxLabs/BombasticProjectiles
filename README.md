@@ -1,7 +1,7 @@
 Drop a ⭐ to support and stay up to date!
 
 Consider [donating](https://ko-fi.com/jammerz), no pressure 🩷
-
+#
 # Bombastic Projectiles
 Explosive projectiles with rich configuration.
 
