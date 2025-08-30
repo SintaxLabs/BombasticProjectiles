@@ -1,3 +1,5 @@
+Drop a ⭐ to support and stay up to date!
+
 # Bombastic Projectiles
 Explosive projectiles with rich configuration.
 
