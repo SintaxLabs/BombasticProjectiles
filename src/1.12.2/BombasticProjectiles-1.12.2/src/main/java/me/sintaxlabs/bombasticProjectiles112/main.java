@@ -24,6 +24,7 @@ package me.sintaxlabs.bombasticProjectiles112;
 import me.sintaxlabs.bombasticProjectiles112.listeners.*;
 
 import org.bukkit.Material;
+import org.bukkit.Sound;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -173,6 +174,7 @@ public final class main extends JavaPlugin implements Listener
             {
                 reloadConfig();
                 refreshConfig();
+
 
                 sender.sendMessage("§7[§6BombasticProjectiles§7] §aConfig reloaded.");
             } else {
