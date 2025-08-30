@@ -6,6 +6,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockExplodeEvent;
 import org.bukkit.event.entity.EntityExplodeEvent;
 import org.bukkit.event.hanging.HangingBreakByEntityEvent;
+import org.bukkit.event.hanging.HangingBreakEvent;
 
 public class explosiveBreakEvents implements Listener
 {
@@ -16,14 +17,13 @@ public class explosiveBreakEvents implements Listener
         if (main.Global.protectedEntityList.contains(e.getEntity().getType()))
         {
             e.setCancelled(true);
-            return;
         }
 
     }
 
     //Prevents things like Item Frames or Paintings from destruction if they're in the ProtectedEntities List.
     @EventHandler
-    public void hangingEntityCheck(HangingBreakByEntityEvent e)
+    public void hangingEntityCheck(HangingBreakEvent e)
     {
         if (!main.Global.kaboom) return;
         if (main.Global.protectedEntityList.contains(e.getEntity().getType()))
