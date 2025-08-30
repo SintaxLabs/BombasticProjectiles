@@ -1,6 +1,6 @@
 name: BombasticProjectiles
 version: '1.0.7'
-main: me.sintaxlabs.bombasticProjectiles121x.main
+main: me.sintaxlabs.bombasticProjectiles1165.main
 api-version: '1.16'
 
 permissions:

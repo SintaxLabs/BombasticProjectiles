@@ -20,8 +20,8 @@
 //2b.   playerProjEvent
 
 
-package me.sintaxlabs.bombasticProjectiles121x;
-import me.sintaxlabs.bombasticProjectiles121x.listeners.*;
+package me.sintaxlabs.bombasticProjectiles1165;
+import me.sintaxlabs.bombasticProjectiles1165.listeners.*;
 
 import org.bukkit.Material;
 import org.bukkit.command.Command;
