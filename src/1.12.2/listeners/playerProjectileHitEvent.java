@@ -1,6 +1,7 @@
 package me.sintaxlabs.bombasticProjectiles121x.listeners;
 
 import me.sintaxlabs.bombasticProjectiles121x.main;
+import net.kyori.adventure.text.Component;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.entity.*;
@@ -68,7 +69,7 @@ public final class playerProjectileHitEvent implements Listener
                     {
                         if (main.Global.configToggleVerbose)
                         {
-                            getServer().broadcastMessage("§eProjectile Notice §7- §cPermission or Toggle to BreakBlocks is not granted/enabled.");
+                            getServer().broadcast(Component.text("§eProjectile Notice §7- §cPermission or Toggle to BreakBlocks is not granted/enabled."));
                         }
                     }
                 }
@@ -80,7 +81,7 @@ public final class playerProjectileHitEvent implements Listener
                         pEventInfo.goodToBreakBlocks = false;
                         if (main.Global.configToggleVerbose)
                         {
-                            getServer().broadcastMessage("§eProjectile Notice §7- §cPlayerBreakBlocks is toggled off.");
+                            getServer().broadcast(Component.text("§eProjectile Notice §7- §cPlayerBreakBlocks is toggled off."));
                         }
                     }
                     else
@@ -159,6 +160,9 @@ public final class playerProjectileHitEvent implements Listener
                 {
                     pEventInfo.pDamageType = main.Global.configImpactPotion;}
                 whichImpactType();
+
+                //Fix to allow consecutive explosions
+                launchCheck.launchGlobal.playerShotStarted = true;
             }
         }
         //Projectile Check - Snowball
@@ -169,6 +173,20 @@ public final class playerProjectileHitEvent implements Listener
                 if (main.Global.configToggleImpactCustom)
                 {
                     pEventInfo.pDamageType = main.Global.configImpactSnowball;}
+                whichImpactType();
+
+                //Fix to allow consecutive explosions
+                launchCheck.launchGlobal.playerShotStarted = true;
+            }
+        }
+        //Projectile Check - Trident
+        else if (pEventInfo.pEntity instanceof Trident)
+        {
+            if (main.Global.configToggleTrident)
+            {
+                if (main.Global.configToggleImpactCustom)
+                {
+                    pEventInfo.pDamageType = main.Global.configImpactTrident;}
                 whichImpactType();
             }
         }
@@ -181,6 +199,9 @@ public final class playerProjectileHitEvent implements Listener
                 {
                     pEventInfo.pDamageType = main.Global.configImpactEgg;}
                 whichImpactType();
+
+                //Fix to allow consecutive explosions
+                launchCheck.launchGlobal.playerShotStarted = true;
             }
         }
         //Projectile Check - ExpBottle
@@ -192,6 +213,9 @@ public final class playerProjectileHitEvent implements Listener
                 {
                     pEventInfo.pDamageType = main.Global.configImpactExpBottle;}
                 whichImpactType();
+
+                //Fix to allow consecutive explosions
+                launchCheck.launchGlobal.playerShotStarted = true;
             }
         }
         //Projectile Check - Fishing Rod
@@ -203,7 +227,6 @@ public final class playerProjectileHitEvent implements Listener
                 {
                     pEventInfo.pDamageType = main.Global.configImpactFishingBobber;}
                 whichImpactType();
-                launchCheck.launchGlobal.playerShotStarted = false;
             }
         }
         //Projectile Check - Enderpearl
@@ -239,14 +262,12 @@ public final class playerProjectileHitEvent implements Listener
             //----------------------------------------------------------------------------
             if (main.Global.configToggleVerbose)
             {
-                getServer().broadcastMessage(pEventInfo.pString + pEventInfo.pImpactValue);}
+                getServer().broadcast(Component.text(pEventInfo.pString + pEventInfo.pImpactValue));}
             //----------------------------------------------------------------------------
             main.Global.kaboom = true;
-
-            // Simply swap to 1st one. 1st one will require Other-Explosions set to FALSE for Worldguard Regions
-            // 2nd one will block players but is incompatible for 1.12.2
-            pEventInfo.pTarget.createExplosion(pEventInfo.pLocation, pEventInfo.pImpactValue, main.Global.configToggleFire, pEventInfo.goodToBreakBlocks);
-            //pEventInfo.pTarget.createExplosion(pEventInfo.pLocation, pEventInfo.pImpactValue, main.Global.configToggleFire, pEventInfo.goodToBreakBlocks, pEventInfo.playerWhoShot);
+            // I forgot why I wanted to comment this out and declare who will own the explosion but this inadvertently supports Worldguard now lmao.
+            //pEventInfo.pTarget.createExplosion(pEventInfo.pLocation, pEventInfo.pImpactValue, main.Global.configToggleFire, pEventInfo.goodToBreakBlocks);
+            pEventInfo.pTarget.createExplosion(pEventInfo.pLocation, pEventInfo.pImpactValue, main.Global.configToggleFire, pEventInfo.goodToBreakBlocks, pEventInfo.playerWhoShot);
             cleanUpProcess();
         }
     }
