@@ -1,31 +1,21 @@
-# BombasticProjectiles
+# Bombastic Projectiles
 Explosive projectiles with rich configuration.
 
+Have explosive fun no matter the type of server you host!
+
 ## Features
-> - Permissions to safely limit ranks/players!
-> - Togglable Player/Mob Damage!
-> - Togglable Block Breaking!
-> - Choose what projectile can explode.
-> - Rich configuration for everything between you and the explosion.
 
-## Configurable
-Every aspect can toggled and configured!
-> - Global Explosive Power
-> - Togglable Mob Explosive Power
-> - Togglable Explosive Power for each projectile.
-
-## FAQ
-Is this safe for Worldguard?
-> - No but you can set "other-explosions" to FALSE in your Region Flags to block it.
-
-Is this performant for servers?
-> - About as performant as explosions can be.
-> - All elements and checks are optimized to run quick and smooth.
-> - Coming soon: Blocks from explosions do not drop items by default.
-
-## Supported Versions
-> - 1.16.5 ~ 1.21.x
-> - 1.12.2
+> - Permissions to safely limit ranks/players.
+> - Protect certain blocks/items/mobs.
+> - Disable certain worlds.
+> - Togglable Named Mob Damage.
+> - Togglable Player/Mob Damage.
+> - Togglable Player/Mob Block Breaking.
+> - Togglable Item Dropping
+> - Togglable Mob Impact.
+> - Configure explosive power and fire aspect.
+> - Configure individual projectile explosives.
+> - Arrows / Eggs / EnderPearls / ExpBottles / FishingBobber / Potions / Snowballs / Tridents supported.
 
 ## Links
 
