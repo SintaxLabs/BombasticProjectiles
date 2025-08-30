@@ -34,4 +34,4 @@ Have explosive fun no matter the type of server you host!
 
 **Donations**
 
-[Ko-Fi](https://ko-fi.com/jammingcat21)
+[Ko-Fi](https://ko-fi.com/jammerz)
