@@ -3,13 +3,16 @@ Common issues and FAQ
 
 # FAQ
 
-### What is "mob-Explode-Blocks" & "mob-Explode-Entities?"
-- This enables explosions from mobs such as Skeletons if it hits a player/mob or any block.
-- This prevents unnecessary explosions and does not mean it will break blocks.
+### Is it safe for Worldguard?
+- Sort of. In your regions, set **other-explosions** to false. This will block any BP Explosion.
+
+### Server Performance?
+- I haven't got to test it past two players but it never raised any issue with Spark.
+- You can set the explosive size smaller and disable Item Drops in the Config file.
+- 1.0.7 was a complete rewrite that codensed all logic and checks.
 
 ### Can players hit themselves?
 - No, this is prevented by default regardless of any condition.
-- This does not effect players that dont have the permission: bombasticProjectiles.projectiles
 
 # Common issues and how to resolve them.
 
@@ -21,8 +24,7 @@ Common issues and FAQ
 ### Mobs are destroying everything
 - Disable **mobs-Explode-Entities** & **mobs-Explode-Blocks**.
 - This prevents them from triggering explosions if they hit a block or player/mob.
-
-**This is disabled by DEFAULT.**
+- **This is disabled by DEFAULT.**
 
 ### XYZ Projectile is not exploding.
 - Make sure the projectile is set to true. Only Arrows are enabled by default.
