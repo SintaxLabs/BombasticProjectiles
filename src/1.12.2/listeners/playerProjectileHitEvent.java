@@ -254,10 +254,7 @@ public final class playerProjectileHitEvent implements Listener
             //----------------------------------------------------------------------------
             main.Global.kaboom = true;
 
-            // Simply swap to 1st one. 1st one will require Other-Explosions set to FALSE for Worldguard Regions
-            // 2nd one will block players but is incompatible for 1.12.2
             pEventInfo.pTarget.createExplosion(pEventInfo.pLocation, pEventInfo.pImpactValue, main.Global.configToggleFire, pEventInfo.goodToBreakBlocks);
-            //pEventInfo.pTarget.createExplosion(pEventInfo.pLocation, pEventInfo.pImpactValue, main.Global.configToggleFire, pEventInfo.goodToBreakBlocks, pEventInfo.playerWhoShot);
             cleanUpProcess();
         }
     }
