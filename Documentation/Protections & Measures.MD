@@ -1,4 +1,4 @@
-**This list does not contain the obvious features such as permissions.
+## This list does not contain the obvious features such as permissions.
 These are internal measures to prevent any bypass or exploit.
 
 If you find an exploit, let me know.
