@@ -1,6 +1,7 @@
 package me.sintaxlabs.bombasticProjectiles121x.listeners;
 
 import me.sintaxlabs.bombasticProjectiles121x.main;
+import net.kyori.adventure.text.Component;
 import org.bukkit.entity.*;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -156,7 +157,7 @@ public final class entityHurtCheck implements Listener
             //Prevents spamming warnings based on how many mobs the player attempted to hurt.
             while (hurtGlobal.playerCount == 1)
             {
-                getServer().broadcastMessage("§eHurtCheck Notice §7- §cPlayer Damage is toggled off.");
+                getServer().broadcast(Component.text("§eHurtCheck Notice §7- §cPlayer Damage is toggled off."));
                 hurtGlobal.playerCount ++;
             }
 
@@ -169,7 +170,7 @@ public final class entityHurtCheck implements Listener
             //Prevents spamming warnings based on how many mobs the player attempted to hurt.
             while (hurtGlobal.mobCount == 1)
             {
-                getServer().broadcastMessage("§eHurtCheck Notice §7- §cMob Damage is toggled off.");
+                getServer().broadcast(Component.text("§eHurtCheck Notice §7- §cMob Damage is toggled off."));
                 hurtGlobal.mobCount ++;
             }
 
@@ -181,7 +182,7 @@ public final class entityHurtCheck implements Listener
         {
             while (hurtGlobal.playerCount == 1)
             {
-                getServer().broadcastMessage("§cHurtCheck Error §7- §eYou have permission to harm players but do not have the feature to.");
+                getServer().broadcast(Component.text("§cHurtCheck Error §7- §eYou have permission to harm players but do not have the feature to."));
                 hurtGlobal.playerCount ++;
             }
         }
@@ -193,7 +194,7 @@ public final class entityHurtCheck implements Listener
             //Prevents spamming warnings based on how many mobs the player attempted to hurt.
             while (hurtGlobal.mobCount == 1)
             {
-                getServer().broadcastMessage("§cHurtCheck Error §7- §eYou have permission to harm mobs but do not have the feature to.");
+                getServer().broadcast(Component.text("§cHurtCheck Error §7- §eYou have permission to harm mobs but do not have the feature to."));
                 hurtGlobal.mobCount++;
             }
         }
@@ -206,7 +207,7 @@ public final class entityHurtCheck implements Listener
         {
             while (hurtGlobal.playerCount == 1)
             {
-                getServer().broadcastMessage("§aHurtCheck Success §7- §eA player received explosive damage.");
+                getServer().broadcast(Component.text("§aHurtCheck Success §7- §eA player received explosive damage."));
                 hurtGlobal.playerCount ++;
             }
         }
@@ -222,7 +223,7 @@ public final class entityHurtCheck implements Listener
                     //Placed a cap on how many mobs it can list to prevent spam/lag.
                     if (hurtGlobal.mobCount < 11)
                     {
-                        getServer().broadcastMessage("§aInjured§7: §e" + hurtGlobal.theMobType + " §7(§6" + hurtGlobal.mobCount + "§7)");
+                        getServer().broadcast(Component.text("§aInjured§7: §e" + hurtGlobal.theMobType + " §7(§6" + hurtGlobal.mobCount + "§7)"));
                         hurtGlobal.mobCount ++;
                     }
 
@@ -238,7 +239,7 @@ public final class entityHurtCheck implements Listener
         {
             while (hurtGlobal.playerCount == 1)
             {
-                getServer().broadcastMessage("§cHurtCheck Error §7- §eYou do not have permission to hurt players.");
+                getServer().broadcast(Component.text("§cHurtCheck Error §7- §eYou do not have permission to hurt players."));
                 hurtGlobal.playerCount ++;
             }
         }
@@ -250,7 +251,7 @@ public final class entityHurtCheck implements Listener
             //Prevents spamming warnings based on how many mobs the player attempted to hurt.
             while (hurtGlobal.mobCount == 1)
             {
-                getServer().broadcastMessage("§cHurtCheck Error §7- §eYou do not have permission to hurt mobs.");
+                getServer().broadcast(Component.text("§cHurtCheck Error §7- §eYou do not have permission to hurt mobs."));
                 hurtGlobal.mobCount++;
             }
 
