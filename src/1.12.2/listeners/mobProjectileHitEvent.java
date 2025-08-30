@@ -28,7 +28,6 @@ public final class mobProjectileHitEvent implements Listener
         public static int mDamageType;
         public static int mImpactValue;
         public static String mString;
-        public static Creature mobWhoShot;
     }
 
 
@@ -42,9 +41,8 @@ public final class mobProjectileHitEvent implements Listener
         }
 
         // The shooter is a mob, lets begin.
-        if (e.getEntity().getShooter() instanceof Creature mob)
+        if (e.getEntity().getShooter() instanceof Creature)
         {
-            mEventInfo.mobWhoShot = mob;
             //------------------------------------
             // A block was hit.
             //------------------------------------
