@@ -1,6 +1,7 @@
 package me.sintaxlabs.bombasticProjectiles121x.listeners;
 
 import me.sintaxlabs.bombasticProjectiles121x.main;
+import net.kyori.adventure.text.Component;
 import org.bukkit.entity.*;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -59,7 +60,7 @@ public class launchCheck implements Listener
                 {
                     if (main.Global.configToggleVerbose)
                     {
-                        getServer().broadcastMessage("§e'bombasticProjectiles.projectiles' §cis required if Perms are required.");
+                        getServer().broadcast(Component.text("§e'bombasticProjectiles.projectiles' §cis required if Perms are required."));
                     }
                     return;
                 }
@@ -159,6 +160,6 @@ public class launchCheck implements Listener
     private static void invalidMessage()
     {
         launchGlobal.playerShotStarted = false;
-        getServer().broadcastMessage("§cThis item is not enabled for exploding.");
+        getServer().broadcast(Component.text("§cThis item is not enabled for exploding."));
     }
 }
