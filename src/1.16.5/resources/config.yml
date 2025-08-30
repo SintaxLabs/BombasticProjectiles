@@ -37,9 +37,8 @@ ProtectedWorlds:
 #These entities are immune regardless of any perm/toggle.
 ProtectedEntities:
   - NULL
-  - CAT
+  - COW
   - ITEM_FRAME
-  - GLOW_ITEM_FRAME
   - PAINTING
 
 

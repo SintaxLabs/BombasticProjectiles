@@ -119,6 +119,17 @@ public final class mobProjectileHitEvent implements Listener
                 whichImpactType();
             }
         }
+        //Projectile Check - Trident
+        else if (mEventInfo.mEntity instanceof Trident)
+        {
+            if (main.Global.configToggleTrident)
+            {
+                if (main.Global.configToggleImpactCustom)
+                {
+                    mEventInfo.mDamageType = main.Global.configImpactTrident;}
+                whichImpactType();
+            }
+        }
     }
 
     // Checks what type of impact we should choose if either Mob-Explode Check is true.

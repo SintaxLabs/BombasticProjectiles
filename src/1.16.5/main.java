@@ -5,7 +5,8 @@
 ////////////////////////////////////
 
 // https://github.com/SintaxLabs
-// Game: 1.21.x
+// Game: Ported from 1.12.2
+// Supports: Up to 1.21.8
 // Version: 1.0.7
 
 

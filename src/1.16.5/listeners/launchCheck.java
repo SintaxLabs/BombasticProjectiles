@@ -2,6 +2,7 @@ package me.sintaxlabs.bombasticProjectiles121x.listeners;
 
 import me.sintaxlabs.bombasticProjectiles121x.main;
 import net.kyori.adventure.text.Component;
+import org.bukkit.GameMode;
 import org.bukkit.entity.*;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -149,6 +150,17 @@ public class launchCheck implements Listener
                 {
                     if (!main.Global.configToggleSnowball)
                     {invalidMessage();}
+                }
+            }
+            //Trident CHECK ----------------------------------------------------------
+            else if (e.getEntity() instanceof Trident)
+            {
+                if (main.Global.configToggleVerbose)
+                {
+                    if (!main.Global.configToggleTrident)
+                    {invalidMessage();}
+                    //1.0.7 Feature to delete Tridents if the shooter is in Creative Mode
+                    launchGlobal.goodToDeleteTrident = player.getGameMode() == GameMode.CREATIVE && main.Global.configToggleTrident;
                 }
             }
         }

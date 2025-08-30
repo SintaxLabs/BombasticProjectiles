@@ -229,6 +229,17 @@ public final class playerProjectileHitEvent implements Listener
                 whichImpactType();
             }
         }
+        //Projectile Check - Trident
+        else if (pEventInfo.pEntity instanceof Trident)
+        {
+            if (main.Global.configToggleTrident)
+            {
+                if (main.Global.configToggleImpactCustom)
+                {
+                    pEventInfo.pDamageType = main.Global.configImpactTrident;}
+                whichImpactType();
+            }
+        }
     }
 
     // Checks what type of impact we should choose.
