@@ -86,7 +86,7 @@ public final class entityHurtCheck implements Listener
             {
                 hurtGlobal.theMob = e.getEntity();
                 hurtGlobal.theCause = e.getCause();
-                hurtGlobal.theMobType = e.getEntityType();
+                hurtGlobal.theMobType = e.getEntity().getType();
 
                 if (!main.Global.configToggleRequirePermission)
                 {toggleCheck_MobDamage();}
@@ -217,7 +217,7 @@ public final class entityHurtCheck implements Listener
         {
             if(hurtGlobal.theMob instanceof Creature)
             {
-                if (hurtGlobal.theCause == EntityDamageEvent.DamageCause.ENTITY_EXPLOSION)
+                if (hurtGlobal.theCause == EntityDamageEvent.DamageCause.BLOCK_EXPLOSION)
                 {
                     //Placed a cap on how many mobs it can list to prevent spam/lag.
                     if (hurtGlobal.mobCount < 11)
