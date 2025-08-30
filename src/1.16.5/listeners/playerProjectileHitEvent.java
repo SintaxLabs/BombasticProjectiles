@@ -1,6 +1,7 @@
 package me.sintaxlabs.bombasticProjectiles121x.listeners;
 
 import me.sintaxlabs.bombasticProjectiles121x.main;
+import net.kyori.adventure.text.Component;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.entity.*;
@@ -68,7 +69,7 @@ public final class playerProjectileHitEvent implements Listener
                     {
                         if (main.Global.configToggleVerbose)
                         {
-                            getServer().broadcastMessage("§eProjectile Notice §7- §cPermission or Toggle to BreakBlocks is not granted/enabled.");
+                            getServer().broadcast(Component.text("§eProjectile Notice §7- §cPermission or Toggle to BreakBlocks is not granted/enabled."));
                         }
                     }
                 }
@@ -80,7 +81,7 @@ public final class playerProjectileHitEvent implements Listener
                         pEventInfo.goodToBreakBlocks = false;
                         if (main.Global.configToggleVerbose)
                         {
-                            getServer().broadcastMessage("§eProjectile Notice §7- §cPlayerBreakBlocks is toggled off.");
+                            getServer().broadcast(Component.text("§eProjectile Notice §7- §cPlayerBreakBlocks is toggled off."));
                         }
                     }
                     else
@@ -250,7 +251,7 @@ public final class playerProjectileHitEvent implements Listener
             //----------------------------------------------------------------------------
             if (main.Global.configToggleVerbose)
             {
-                getServer().broadcastMessage(pEventInfo.pString + pEventInfo.pImpactValue);}
+                getServer().broadcast(Component.text(pEventInfo.pString + pEventInfo.pImpactValue));}
             //----------------------------------------------------------------------------
             main.Global.kaboom = true;
 
