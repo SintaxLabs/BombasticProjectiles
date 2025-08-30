@@ -1,5 +1,7 @@
 Drop a ⭐ to support and stay up to date!
 
+Consider [donating](https://ko-fi.com/jammerz), no pressure 🩷
+
 # Bombastic Projectiles
 Explosive projectiles with rich configuration.
 
@@ -31,7 +33,3 @@ Have explosive fun no matter the type of server you host!
 
 [Youtube](https://www.youtube.com/@SintaxLabs)
 [Discord](discord.gg/JjqjaJDaF5)
-
-**Donations**
-
-[Ko-Fi](https://ko-fi.com/jammerz)
