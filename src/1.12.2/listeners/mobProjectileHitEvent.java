@@ -1,7 +1,6 @@
 package me.sintaxlabs.bombasticProjectiles121x.listeners;
 
 import me.sintaxlabs.bombasticProjectiles121x.main;
-import net.kyori.adventure.text.Component;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.entity.*;
@@ -29,7 +28,7 @@ public final class mobProjectileHitEvent implements Listener
         public static int mDamageType;
         public static int mImpactValue;
         public static String mString;
-        public static Mob mobWhoShot;
+        public static Creature mobWhoShot;
     }
 
 
@@ -43,7 +42,7 @@ public final class mobProjectileHitEvent implements Listener
         }
 
         // The shooter is a mob, lets begin.
-        if (e.getEntity().getShooter() instanceof Monster mob)
+        if (e.getEntity().getShooter() instanceof Creature mob)
         {
             mEventInfo.mobWhoShot = mob;
             //------------------------------------
@@ -121,17 +120,6 @@ public final class mobProjectileHitEvent implements Listener
                 whichImpactType();
             }
         }
-        //Projectile Check - Trident
-        else if (mEventInfo.mEntity instanceof Trident)
-        {
-            if (main.Global.configToggleTrident)
-            {
-                if (main.Global.configToggleImpactCustom)
-                {
-                    mEventInfo.mDamageType = main.Global.configImpactTrident;}
-                whichImpactType();
-            }
-        }
     }
 
     // Checks what type of impact we should choose if either Mob-Explode Check is true.
@@ -143,7 +131,7 @@ public final class mobProjectileHitEvent implements Listener
             {
                 if (main.Global.configToggleVerbose)
                 {
-                    getServer().broadcast(Component.text("§eProjectile Notice §7- §cMobBreakBlocks is toggled off."));
+                    getServer().broadcastMessage("§eProjectile Notice §7- §cMobBreakBlocks is toggled off.");
                 }
                 return;
             }
@@ -168,11 +156,11 @@ public final class mobProjectileHitEvent implements Listener
             //----------------------------------------------------------------------------
             if (main.Global.configToggleVerbose)
             {
-                getServer().broadcast(Component.text(mEventInfo.mString + mEventInfo.mImpactValue));}
+                getServer().broadcastMessage(mEventInfo.mString + mEventInfo.mImpactValue);}
             //----------------------------------------------------------------------------
             main.Global.kaboom = true;
-            //mEventInfo.mTarget.createExplosion(mEventInfo.mLocation, mEventInfo.mImpactValue, main.Global.configToggleFire, main.Global.configToggleBreakBlocks);
-            mEventInfo.mTarget.createExplosion(mEventInfo.mLocation, mEventInfo.mImpactValue, main.Global.configToggleFire, main.Global.configToggleMobBreakBlocks, mEventInfo.mobWhoShot);
+            mEventInfo.mTarget.createExplosion(mEventInfo.mLocation, mEventInfo.mImpactValue, main.Global.configToggleFire, main.Global.configToggleMobBreakBlocks);
+            //mEventInfo.mTarget.createExplosion(mEventInfo.mLocation, mEventInfo.mImpactValue, main.Global.configToggleFire, main.Global.configToggleMobBreakBlocks, mEventInfo.mobWhoShot);
             cleanUpProcess();
         }
     }
