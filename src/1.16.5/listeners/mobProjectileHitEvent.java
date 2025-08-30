@@ -1,6 +1,7 @@
 package me.sintaxlabs.bombasticProjectiles121x.listeners;
 
 import me.sintaxlabs.bombasticProjectiles121x.main;
+import net.kyori.adventure.text.Component;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.entity.*;
@@ -129,7 +130,7 @@ public final class mobProjectileHitEvent implements Listener
             {
                 if (main.Global.configToggleVerbose)
                 {
-                    getServer().broadcastMessage("§eProjectile Notice §7- §cMobBreakBlocks is toggled off.");
+                    getServer().broadcast(Component.text("§eProjectile Notice §7- §cMobBreakBlocks is toggled off."));
                 }
                 return;
             }
@@ -154,11 +155,10 @@ public final class mobProjectileHitEvent implements Listener
             //----------------------------------------------------------------------------
             if (main.Global.configToggleVerbose)
             {
-                getServer().broadcastMessage(mEventInfo.mString + mEventInfo.mImpactValue);}
+                getServer().broadcast(Component.text(mEventInfo.mString + mEventInfo.mImpactValue));}
             //----------------------------------------------------------------------------
             main.Global.kaboom = true;
             mEventInfo.mTarget.createExplosion(mEventInfo.mLocation, mEventInfo.mImpactValue, main.Global.configToggleFire, main.Global.configToggleMobBreakBlocks);
-            //mEventInfo.mTarget.createExplosion(mEventInfo.mLocation, mEventInfo.mImpactValue, main.Global.configToggleFire, main.Global.configToggleMobBreakBlocks, mEventInfo.mobWhoShot);
             cleanUpProcess();
         }
     }
