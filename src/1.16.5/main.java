@@ -28,10 +28,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.EntityType;
-import org.bukkit.entity.Player;
-import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.jetbrains.annotations.NotNull;
 
@@ -45,7 +42,6 @@ public final class main extends JavaPlugin implements Listener
     @Override
     public void onEnable()
     {
-        // Plugin startup logic
         saveDefaultConfig();
         loadProtectionLists();
 
@@ -96,6 +92,10 @@ public final class main extends JavaPlugin implements Listener
         Global.configToggleTridentTeleportMessage = this.getConfig().getBoolean("trident-TP-Message");
         Global.configToggleVerbose = this.getConfig().getBoolean("verbose");
 
+        if (Global.configToggleVerbose)
+        {
+            getLogger().warning("BombasticProjectiles - Verbose is enabled. Not recommended for public servers.");
+        }
     }
 
 
@@ -151,20 +151,6 @@ public final class main extends JavaPlugin implements Listener
         public static Set<String> protectedWorldList;
 
 
-    }
-
-    //Verbose Operator Join Disclaimer
-    @EventHandler
-    public void playerJoinEvent (PlayerJoinEvent e)
-    {
-        if (Global.configToggleVerbose)
-        {
-            Player player = e.getPlayer();
-            if (player.isOp())
-            {
-                player.sendMessage("§7[§6BombasticProjectiles§7] §cVerbose is enabled. Not recommended for public servers.");
-            }
-        }
     }
 
     @Override
