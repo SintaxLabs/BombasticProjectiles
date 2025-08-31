@@ -175,29 +175,6 @@ public final class entityHurtCheck implements Listener
 
         }
     }
-    private static void verbose_PermissionButNoPlayerDamageToggle()
-    {
-        if (main.Global.configToggleVerbose)
-        {
-            while (hurtGlobal.playerCount == 1)
-            {
-                getServer().broadcastMessage("§cHurtCheck Error §7- §eYou have permission to harm players but do not have the feature to.");
-                hurtGlobal.playerCount ++;
-            }
-        }
-    }
-    private static void verbose_PermissionButNoMobDamageToggle()
-    {
-        if (main.Global.configToggleVerbose)
-        {
-            //Prevents spamming warnings based on how many mobs the player attempted to hurt.
-            while (hurtGlobal.mobCount == 1)
-            {
-                getServer().broadcastMessage("§cHurtCheck Error §7- §eYou have permission to harm mobs but do not have the feature to.");
-                hurtGlobal.mobCount++;
-            }
-        }
-    }
     //------------------------------------------------------------------------------------------------------------------
     //Success Damage Messages
     private static void verbose_SuccessPlayerDamage()
