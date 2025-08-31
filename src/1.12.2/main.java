@@ -24,6 +24,7 @@ package me.sintaxlabs.bombasticProjectiles112;
 import me.sintaxlabs.bombasticProjectiles112.listeners.*;
 
 import org.bukkit.Material;
+import org.bukkit.Sound;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -91,6 +92,10 @@ public final class main extends JavaPlugin implements Listener
 
         Global.configToggleVerbose = this.getConfig().getBoolean("verbose");
 
+        if (Global.configToggleVerbose)
+        {
+            getLogger().warning("BombasticProjectiles - Verbose is enabled. Not recommended for public servers.");
+        }
     }
 
 
@@ -140,22 +145,6 @@ public final class main extends JavaPlugin implements Listener
         public static Set<Material> protectedBlockList;
         public static Set<EntityType> protectedEntityList;
         public static Set<String> protectedWorldList;
-
-
-    }
-
-    //Verbose Operator Join Disclaimer
-    @EventHandler
-    public void playerJoinEvent (PlayerJoinEvent e)
-    {
-        if (Global.configToggleVerbose)
-        {
-            Player player = e.getPlayer();
-            if (player.isOp())
-            {
-                player.sendMessage("§7[§6BombasticProjectiles§7] §cVerbose is enabled. Not recommended for public servers.");
-            }
-        }
     }
 
     @Override
@@ -173,6 +162,7 @@ public final class main extends JavaPlugin implements Listener
             {
                 reloadConfig();
                 refreshConfig();
+
 
                 sender.sendMessage("§7[§6BombasticProjectiles§7] §aConfig reloaded.");
             } else {
