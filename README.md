@@ -31,11 +31,7 @@ Consider [donating](https://ko-fi.com/jammerz), no pressure 🩷
 
 **Projects**
 
-[Modrinth](https://modrinth.com/plugin/explosiveprojectiles)
-[Spigot](https://www.spigotmc.org/resources/bombastic-projectiles.123972/)
-[CurseForge](https://legacy.curseforge.com/minecraft/bukkit-plugins/bombastic-projectiles)
+[Modrinth](https://modrinth.com/plugin/bombasticprojectiles) / [Spigot](https://www.spigotmc.org/resources/bombastic-projectiles.123972/) / [CurseForge](https://legacy.curseforge.com/minecraft/bukkit-plugins/bombastic-projectiles)
 
 **Socials**
-
-[Youtube](https://www.youtube.com/@SintaxLabs)
 [Discord](discord.gg/JjqjaJDaF5)
