@@ -1,6 +1,4 @@
-<img width="1280" height="460" alt="wbjhgb5q6f841 png-720 - Copy" src="https://github.com/user-attachments/assets/fd6a383f-5a11-4607-9a13-ac2552d2c683" />
-
-# Bombastic Projectiles
+<img width="1280" height="460" alt="BP-Wallpaper" src="https://github.com/user-attachments/assets/b3a2d094-452f-4b42-bf4b-f2c6c624e575" />
 Have explosive fun no matter the type of server you host!
 
 Drop a ⭐ to support and stay up to date!
