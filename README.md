@@ -9,13 +9,12 @@ Consider [donating](https://ko-fi.com/jammerz), no pressure 🩷
 
 ## Support
 To save time and resources, we update by API, not MC version.
-> This allows longer support for all and less maintaining!
+> Read more [here.](https://github.com/SintaxLabs/BombasticProjectiles/blob/main/Support%20Roadmap.md)
 
 | MC Version    | API  | Support |
 | :---------:   | :-:  | :-----: |
 | 1.12          | 1.12 |  ⛔ |
 | 1.16 - 1.21.x | 1.16 |  ✅ |
-> Once an API is outdated, future updates are not guaranteed.
 
 ## Features
 
