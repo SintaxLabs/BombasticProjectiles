@@ -1,11 +1,17 @@
+<img width="1280" height="460" alt="wbjhgb5q6f841 png-720 - Copy" src="https://github.com/user-attachments/assets/fd6a383f-5a11-4607-9a13-ac2552d2c683" />
+
+# Bombastic Projectiles
+Have explosive fun no matter the type of server you host!
+
 Drop a ⭐ to support and stay up to date!
 
 Consider [donating](https://ko-fi.com/jammerz), no pressure 🩷
-#
-# Bombastic Projectiles
-Explosive projectiles with rich configuration.
 
-Have explosive fun no matter the type of server you host!
+## Support
+| MC Version    | API  | Support |
+| :---------:   | :-:  | :-----: |
+| 1.12          | 1.12 |  ⛔ |
+| 1.16 - 1.21.x | 1.16 |  ✅ |
 
 ## Features
 
