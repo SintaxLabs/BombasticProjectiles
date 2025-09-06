@@ -10,6 +10,7 @@ Consider [donating](https://ko-fi.com/jammerz), no pressure 🩷
 ## Support
 To save time and resources, we update by API, not MC version.
 > This allows longer support for all and less maintaining!
+
 | MC Version    | API  | Support |
 | :---------:   | :-:  | :-----: |
 | 1.12          | 1.12 |  ⛔ |
