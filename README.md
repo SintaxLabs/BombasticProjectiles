@@ -15,7 +15,7 @@ To save time and resources, we update by API, not MC version.
 | :---------:   | :-:  | :-----: |
 | 1.12          | 1.12 |  ⛔ |
 | 1.16 - 1.21.x | 1.16 |  ✅ |
-> Once an API is outdated, support is cut.
+> Once an API is outdated, future updates are not guaranteed.
 
 ## Features
 
