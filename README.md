@@ -12,7 +12,7 @@ Consider [donating](https://ko-fi.com/jammerz), no pressure 🩷
 | :---------:   | :-:  | :-----: |
 | 1.12          | 1.12 |  ⛔ |
 | 1.16 - 1.21.x | 1.16 |  ✅ |
-> Read more on how we update [here.](https://github.com/SintaxLabs/BombasticProjectiles/blob/main/Update%20Structures.md)
+> Read more on how we update [here.](https://github.com/eh-K/Spigoty/blob/main/API/Codebase%20Unification.md)
 
 ## Features
 
