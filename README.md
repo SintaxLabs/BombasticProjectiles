@@ -29,10 +29,6 @@ Consider [donating](https://ko-fi.com/jammerz), no pressure 🩷
 > - Arrows / Eggs / EnderPearls / ExpBottles / FishingBobber / Potions / Snowballs / Tridents supported.
 
 ## Links
+[Discord](discord.gg/JjqjaJDaF5) / [Modrinth](https://modrinth.com/plugin/bombasticprojectiles) / [Spigot](https://www.spigotmc.org/resources/bombastic-projectiles.123972/) / [CurseForge](https://legacy.curseforge.com/minecraft/bukkit-plugins/bombastic-projectiles)
 
-**Projects**
 
-[Modrinth](https://modrinth.com/plugin/bombasticprojectiles) / [Spigot](https://www.spigotmc.org/resources/bombastic-projectiles.123972/) / [CurseForge](https://legacy.curseforge.com/minecraft/bukkit-plugins/bombastic-projectiles)
-
-**Socials**
-[Discord](discord.gg/JjqjaJDaF5)
